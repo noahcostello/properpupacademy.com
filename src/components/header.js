@@ -2,25 +2,19 @@ import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 import { StaticQuery, graphql } from "gatsby";
+import Logo from "../assets/logo.inline.svg";
 
-const OuterWrapper = styled.header`
-  background: slategray;
-  margin-bottom: 1.45rem;
-`;
-
-const InnerWrapper = styled.div`
+const HeaderWrapper = styled.header`
+  max-width: 960px;
   margin: 0 auto;
-  max-width: 960;
-  padding: 1.4rem 1.08rem;
+  display: flex;
 `;
 
-const Headline = styled.h1`
-  margin: 0;
-`;
-
-const StyledLink = styled(Link)`
-  color: white;
-  text-decoration: none;
+const LogoLink = styled(Link)`
+  width: 16rem;
+  display: block;
+  margin: 0 auto;
+  padding: 3rem 0;
 `;
 
 const Header = () => (
@@ -35,13 +29,11 @@ const Header = () => (
       }
     `}
     render={data => (
-      <OuterWrapper>
-        <InnerWrapper>
-          <Headline>
-            <StyledLink to="/">{data.site.siteMetadata.title}</StyledLink>
-          </Headline>
-        </InnerWrapper>
-      </OuterWrapper>
+      <HeaderWrapper>
+        <LogoLink to="/" title={data.site.siteMetadata.title}>
+          <Logo />
+        </LogoLink>
+      </HeaderWrapper>
     )}
   />
 );
