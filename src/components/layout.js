@@ -22,6 +22,13 @@ const Background = styled.div`
   z-index: -1;
 `;
 
+const StyledFooter = styled.footer`
+  text-align: center;
+  margin: 5rem 0 1rem;
+  padding: 2rem;
+  border-top: 1px dotted var(--pup-purple);
+`;
+
 const Layout = ({ children }) => (
   <>
     <GlobalStyle />
@@ -29,7 +36,7 @@ const Layout = ({ children }) => (
     <Header />
     <Wrapper>
       <main>{children}</main>
-      <footer>&copy; {new Date().getFullYear()}, Proper Pup Academy</footer>
+      <StyledFooter>&copy; {new Date().getFullYear()}, Proper Pup Academy</StyledFooter>
     </Wrapper>
   </>
 );

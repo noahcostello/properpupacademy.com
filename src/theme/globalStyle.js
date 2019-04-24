@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import "../fonts/fonts.css";
 import "normalize.css";
 import QuoteSVG from "../assets/quote.svg";
+import { size } from "./sizes.js";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -11,13 +12,17 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 html{
-  font-family: "dinnext-regular", serif;
+  font-family: "dinnext-regular", sans-serif;
   color: #444;
   font-size: 17px;
-    @media (max-width: 500px) {
-      font-size: 80%;
-    }
+
+  @media (max-width: ${size.tablet}) {
+      font-size: 90%;
   }
+  @media (max-width: ${size.mobile})  {
+    font-size: 80%;
+  }
+}
  body {
     padding: 0;
     margin: 0;
@@ -38,7 +43,7 @@ html{
     }
 
     &:hover {
-      color: magenta;
+      color: var(--pup-blue);
     }
   }
   ul {
@@ -48,29 +53,32 @@ html{
   h1 {
     font-family: "marinaio-medium";
     letter-spacing: .06rem;
-    color: #5d4e7c;
+    color: var(--pup-purple);
   }
   h2 {
     font-family: "marinaio-medium";
     letter-spacing: .06rem;
+    color: var(--pup-purple);
+    font-size: 2.1rem;
+    margin: .5em 0;
   }
   p{
-    line-height: 1.5;
-    letter-spacing: .01rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    letter-spacing: .02em;
   }
 
   aside {
     float: right;
-    width: 11rem;
+    width: 12rem;
     font-weight: bold;
-    font-size: 1.25rem;
-    padding: 1rem 0 1rem 1.3rem;
+    padding: 1rem 0 .5rem 1.3rem;
     margin: 0 0 0 1rem;
     color: #5e4d7c;
     font-family: "marinaio-medium";
     position: relative;
-    border-left: 3px solid #5d4e7c;
-    border-radius: 2.8rem;
+    /* border-left: 3px solid #5d4e7c; */
+    /* border-radius: 2.8rem; */
   }
 
   blockquote {
@@ -78,6 +86,7 @@ html{
 
     p {
       margin: 0;
+      font-size: 1.3rem;
       line-height: 1.7;
     }
 

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Proper Pup Academy - Dog Training`,
-    description: `Get your dogs trained!`,
+    title: `Proper Pup Academy - A Certified Dog Trainer`,
+    description: `I am an Animal Behavior College Certified Dog Trainer in Huntington Beach, CA. I have worked with various breeds, of all ages and sizes.`,
     author: `@noahcostello`
   },
   plugins: [
@@ -18,11 +18,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `proper-pup-academy`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#494866`,
+        theme_color: `#494866`,
         display: `minimal-ui`,
         icon: `src/images/pup-icon.png` // This path is relative to the root of the site.
       }

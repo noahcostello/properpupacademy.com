@@ -15,6 +15,7 @@ const LogoLink = styled(Link)`
   display: block;
   margin: 0 auto;
   padding: 3rem 0;
+  border: none;
 `;
 
 const Header = () => (

@@ -1,16 +1,10 @@
 @font-face {
   font-family: "marinaio-medium";
-  src: url("marinaioserif-medium.woff2") format("woff2"), url("marinaioserif-medium.woff") format("woff");
+  src: url("marinaioserif-medium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: "marinaio-heavy";
-  src: url("marinaioserif-heavy.woff2") format("woff2"), url("marinaioserif-heavy.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 @font-face {
   font-family: "dinnext-regular";
   src: url("DINNextLTPro-Regular.woff") format("woff");
