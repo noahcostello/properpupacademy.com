@@ -188,7 +188,7 @@ const IndexPage = ({ data }) => (
     <MainContent>
       <StyledSection>
         <h2>{data.allDataJson.edges[0].node.siteCopy.introTitle}</h2>
-        <p dangerouslySetInnerHTML={{ __html: data.allDataJson.edges[0].node.siteCopy.introCopy }} />
+        <div dangerouslySetInnerHTML={{ __html: data.allDataJson.edges[0].node.siteCopy.introCopy }} />
       </StyledSection>
       <AbcdtCallout>
         <AbcdtLink
