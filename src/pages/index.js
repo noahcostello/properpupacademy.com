@@ -219,10 +219,7 @@ const IndexPage = ({ data }) => (
           >
             <Img fluid={data.packageThumb.childImageSharp.fluid} />
           </PackageCallout>
-          <p>
-            I offer a variety of training packages. Whether you need a single day of consultation or a multi-session
-            packages.
-          </p>
+          <p>I offer a variety of training packages. Whether you need a single session or a multi-session package.</p>
           <p>
             Feel free to{" "}
             <a href="mailto:katelyn@properpupacademy.com" rel="noopener noreferrer" target="_blank">
