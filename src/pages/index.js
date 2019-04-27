@@ -178,7 +178,7 @@ const IndexPage = ({ data }) => (
             <IconFb className="icon" />
             <span>Facebook</span>
           </a>
-          <a href="http://fb.me/properpupacademy" rel="noopener noreferrer" target="_blank">
+          <a href="http://instagram.com/properpupacademy" rel="noopener noreferrer" target="_blank">
             <IconInsta className="icon" />
             <span>Instagram</span>
           </a>
